@@ -1,0 +1,30 @@
+{
+  "name": "trending-movies-react-app-express-server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.11",
+    "nodemon": "^2.0.15",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "heroku-postbuild": "cd client && yarn && yarn run build",
+    "how-much-is-the-fish": "heroku ps -a trending-movies-react-app"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "description": "[![Actions Status](https://github.com/theDavidBarton/trending-movies-react-app/workflows/CI/badge.svg)](https://github.com/theDavidBarton/trending-movies-react-app/actions) ![imdb](https://img.shields.io/badge/IMDb-false-1C1E20.svg?logo=imdb) ![tmdb](https://img.shields.io/badge/TMDb-true-01D277.svg?logo=the-movie-database) ![crocodile](https://img.shields.io/badge/crocodiles_in_the_basement-%F0%9F%90%8A_yes-orange.svg)",
+  "devDependencies": {},
+  "keywords": [],
+  "author": ""
+}
